@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Shoe } from "../../type";
-import Badge from "./Badge";
 import calcDiscount from "../../utils/calcDiscount";
+import Badge from "./badge";
 
 const Card = ({ item }: { item: Shoe }) => {
   
@@ -19,15 +19,19 @@ const Card = ({ item }: { item: Shoe }) => {
         </h2>
       </div>
       <Link
-        to={"/"}
+        to={`/detail/${item.id}`}
         className="text-white bg-gray-dark font-medium 
      px-4 py-2 rounded-[8px] transition
-    hover:bg-black"
+    hover:bg-black text-center"
       >
         Ürünü Görüntüle -{" "}
         <span className={item.discount ? "text-yellow" : "text-white"}>
           ${calcDiscount(item.price, item.discount)}
         </span>
+        
+        {item.discount && (
+        <span className="max-xl:hidden line-through text-yellow ps-2">$({item.price}) </span>
+        )}
       </Link>
     </div>
   );

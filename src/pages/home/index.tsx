@@ -1,4 +1,5 @@
-import Filter from "./filter"
+
+import Filter from "../../components/filter"
 import Hero from "./hero"
 import List from "./list"
 
