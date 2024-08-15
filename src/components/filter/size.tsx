@@ -2,16 +2,15 @@ import { useEffect} from "react";
 import { numbers } from "../../utils/constants";
 import { useSearchParams } from "react-router-dom";
 
-type Props = {
+export type FilterProps = {
   selected: string[];
   setSelected: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
-const Size = ({ selected, setSelected }: Props) => {
+const Size = ({ selected, setSelected }: FilterProps) => {
  
  const [params, setParams] = useSearchParams();
  
-
   // state her değiştiğinde url' deki parametreleri güncelle
 
   useEffect(() => {
@@ -28,8 +27,6 @@ const Size = ({ selected, setSelected }: Props) => {
     setParams(params);
   }, [selected]);
 
-
-  
   // Üzerine tıklanan numara state' te yoksa ekle varsa kaldır
   const toggle = (num: string) => {
     //! console.log(i)
