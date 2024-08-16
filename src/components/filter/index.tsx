@@ -29,6 +29,16 @@ const Filter = ({ isOpen, close }: Props) => {
 
 const [value, setValue] = useState<string>(params.get("price") || "0");
 
+const handleReset = () => {
+  setParams({});
+
+  setSelected([]);
+  setColor([]);
+  setGender([]);
+  setValue("0");
+
+};
+
   return (
     <div
       className={
@@ -52,6 +62,7 @@ const [value, setValue] = useState<string>(params.get("price") || "0");
           <Gender selected={gender} setSelected={setGender} />
           <Price value={value} setValue={setValue} />
           <button
+          onClick={handleReset}
             type="reset"
             className="border border-gray-dark p-2 rounded-lg
          hover:bg-gray-dark hover:text-white trannsition"

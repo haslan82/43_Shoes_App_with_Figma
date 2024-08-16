@@ -1,3 +1,4 @@
+import { useDebounce } from "@uidotdev/usehooks";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 
@@ -8,11 +9,25 @@ type Props = {
 
 const Price = ({value, setValue}:Props) => {
 const [params, setParams] = useSearchParams();
+// performans için debounce uyguladık
+const debounceValue = useDebounce(value, 300)
+
 
 useEffect(()=> {
+
+  if(+value >0){
+
+  
   params.set("price", value)
-  setParams(params);
-}, [value]);
+  
+}else{
+  params.delete("price");
+ 
+}
+
+setParams(params);
+
+}, [debounceValue]);
 
   return (
     <div>

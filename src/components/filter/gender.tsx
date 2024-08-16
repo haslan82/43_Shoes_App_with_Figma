@@ -11,11 +11,11 @@ const Gender = ({ selected, setSelected }: FilterProps) => {
     if (selected.length > 0) {
       // seçili eleman varsa aralarına , koyup urle ekle
       params.set("gender", selected.join(","));
-      setParams(params);
+     
     } else {
       // seçili eleman yoksa urldeki parametreyi kaldır
       params.delete("gender");
-      setParams(params);
+     
     }
     setParams(params);
   }, [selected]);

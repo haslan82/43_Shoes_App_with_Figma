@@ -13,11 +13,11 @@ const Color = ({ selected, setSelected }: FilterProps) => {
     if (selected.length > 0) {
       // seçili eleman varsa aralarına , koyup urle ekle
       params.set("color", selected.join(","));
-      setParams(params);
+      
     } else {
       // seçili eleman yoksa urldeki parametreyi kaldır
       params.delete("color");
-      setParams(params);
+    
     
     }
     setParams(params);
