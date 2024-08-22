@@ -35,8 +35,12 @@ console.log(data);
             <Color data={data.color} />
             <Size data={data.size} />
             <p>
-              <h2>Bu ürün hakkında</h2>
-              <p>{data.description} </p>
+              <h2 className="text-2xl">Bu ürün hakkında</h2>
+              <p className="font-open my-4"
+              dangerouslySetInnerHTML={{ __html: data.description}}
+              >
+
+              </p>
             </p>
           </div>
         </section>
