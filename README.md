@@ -15,10 +15,8 @@ Shoes-App, kullanıcıların ayakkabıları kolayca görüntüleyip fiyat, cinsi
 - json-server
 - @tanstack/react-query
 - react-toastify
-- 
-## Uygulanan Tasarım
 
-- https://www.figma.com/community/file/1214498651988846999
+
 
 ### Gif
 
@@ -27,3 +25,7 @@ Shoes-App, kullanıcıların ayakkabıları kolayca görüntüleyip fiyat, cinsi
 
 
 ###  Designed by <a href="https://www.linkedin.com/in/h%C3%BCseyin-aslan-128519203/" target="_blank">Hüseyin ASLAN</a>
+
+## Uygulanan Tasarım
+
+- https://www.figma.com/community/file/1214498651988846999
