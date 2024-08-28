@@ -20,6 +20,7 @@ Shoes-App, kullanıcıların ayakkabıları kolayca görüntüleyip fiyat, cinsi
 
 ### Gif
 
+
 <img src="/public/Zight Recording 2024-08-22 at 10.51.26 PM.gif"/>
 
 
