@@ -30,4 +30,4 @@ Shoes-App, kullanıcıların ayakkabıları kolayca görüntüleyip fiyat, cinsi
 
 ### Uygulanan Tasarım
 
-- https://www.figma.com/community/file/1214498651988846999
+- * https://www.figma.com/community/file/1214498651988846999
